@@ -2,7 +2,7 @@
 
 const buttons = document.querySelectorAll(".btnoption");
 let board = ["", "", "", "", "", "", "", "", ""];
-let currentPlayer = "O";
+let currentPlayer = "X";
 
 for (let i = 0; i < buttons.length; i++) {
     let btn = buttons[i];
@@ -20,5 +20,29 @@ function changePlayer(btn) {
         currentPlayer == "X";
     } else {
         currentPlayer = "O";
-    };
+    }; 
+};
+
+
+function check () {
+    checkHorizontal();
+    checkVertical();
+    checkDiagonal();
+    checkDraw();
+}
+
+function checkHorizontal() {
+    
+}; 
+
+function checkVertical() {
+
+};
+
+function checkDiagonal() {
+
+};
+
+function checkDraw() {
+
 };
